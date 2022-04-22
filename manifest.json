@@ -1,0 +1,41 @@
+{
+  "name": "Replace CDN",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "img/logos.png",
+    "24": "img/logos.png",
+    "32": "img/logos.png",
+    "48": "img/logos.png",
+    "64": "img/logos.png",
+    "128": "img/logos.png"
+  },
+  "description": "将 Google CDN 替换为国内镜像",
+  "background": {
+    "type": "module",
+    "service_worker": "js/ServiceWorker.js"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "enabled": true,
+        "id": "redirectGoogleId",
+        "path": "rules/redirect-google.json"
+      }, {
+        "enabled": true,
+        "id": "removeGoogleId",
+        "path": "rules/remove-google.json"
+      }
+    ]
+  },
+  "author": "https://github.com/gkide",
+  "homepage_url": "https://github.com/gkide/ReplaceCDN"
+}
