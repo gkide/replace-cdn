@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "manifest_version": 3,
   "icons": {
-    "16": "img/logos.png",
-    "24": "img/logos.png",
-    "32": "img/logos.png",
-    "48": "img/logos.png",
-    "64": "img/logos.png",
-    "128": "img/logos.png"
+    "16": "img/16x16.png",
+    "32": "img/32x32.png",
+    "64": "img/64x64.png",
+    "128": "img/128x128.png"
   },
   "description": "将 Google CDN 替换为国内镜像",
   "background": {
