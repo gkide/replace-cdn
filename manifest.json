@@ -8,15 +8,15 @@
     "64": "img/64x64.png",
     "128": "img/128x128.png"
   },
-  "description": "将 Google CDN 替换为国内镜像",
+  "description": "CDN 替换为国内镜像加速国外网页加载",
   "background": {
     "type": "module",
     "service_worker": "js/ServiceWorker.js"
   },
   "permissions": [
     "declarativeNetRequest",
-    "declarativeNetRequestWithHostAccess",
-    "declarativeNetRequestFeedback"
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -25,12 +25,12 @@
     "rule_resources": [
       {
         "enabled": true,
-        "id": "redirectGoogleId",
-        "path": "rules/redirect-google.json"
+        "id": "xIdGoogleRedirect",
+        "path": "rules/google/redirect.json"
       }, {
         "enabled": true,
-        "id": "removeGoogleId",
-        "path": "rules/remove-google.json"
+        "id": "xIdGoogleModifyHeader",
+        "path": "rules/google/modify-header.json"
       }
     ]
   },

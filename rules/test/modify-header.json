@@ -4,15 +4,14 @@
   "action": {
     "type": "modifyHeaders",
     "requestHeaders": [{
-      "header": "x-custom-token",
+      "header": "x-replacecdn-token",
       "operation": "set",
-      "value": "2aed78a8-af8d-11ec-b3bd-879f7464e58a"
+      "value": "2afd78a8-a91bc5cb-8f7a9f7a4d6k4e8a"
     }]
   },
   "condition": {
     "isUrlFilter": false,
-    "urlFilter": "*.com",
-    "requestDomains": ["example.com"],
+    "urlFilter": "https://example.com/*",
     "resourceTypes": [
       "main_frame",
       "sub_frame",

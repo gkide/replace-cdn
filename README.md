@@ -13,27 +13,19 @@
 > - http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
 > - http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js
 
-## 原理
-
-- `ajax.googleapis.com` - 前端公共库
-  * 替换为 `ajax.loli.net`
-- `fonts.googleapis.com` - 免费字体库
-  * 替换为 `fonts.loli.net`
-- `themes.googleusercontent.com` - fonts 可能使用的主题资源
-  * 替换为 `themes.loli.net`
-- `fonts.gstatic.com` - 免费字体库
-  * 替换为 `gstatic.loli.net`
-- `www.google.com/recaptcha` - Google 图像验证库
-  * 替换为 `www.recaptcha.net/recaptcha`
-- `secure.gravatar.com` - gravatar 头像
-  * 替换为 `gravatar.loli.net`
-- `maxcdn.bootstrapcdn.com/bootstrap` - bootstrap 框架使用的 CDN
-  * 替换为 `cdn.bootcdn.net/ajax/libs/twitter-bootstrap`
-
-### 手动安装
+## 手动安装
 
 > 1. 克隆 [ReplaceCDN](https://github.com/gkide/ReplaceCDN)
 > 2. 打开 Chrome，输入: `chrome://extensions/`
 > 3. 勾选 Developer Mode
 > 4. 选择 Load unpacked extension... 然后定位到 `ReplaceCDN` 目录，确定
 > 5. 安装完毕，去掉 Developer Mode 勾选
+
+## Chrome 插件相关文档
+- [developer.chrome.com](https://github.com/GoogleChrome/developer.chrome.com)
+- [Google Developers](https://developers.google.cn/)
+
+- [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
+- [Chrome Extensions Samples](https://github.com/GoogleChrome/chrome-extensions-samples)
+
+- [Chrome插件中文开发文档(非官方) V2](http://docs.getxhr.com/ChromeExtensionDocument/overview.html)
