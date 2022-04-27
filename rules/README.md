@@ -28,6 +28,7 @@
 ```
 
 ## 国内公共CDN
+- CDN公共库 [七牛云CDN](http://www.staticfile.org/)
 - CDN公共库 [BootCDN](https://www.bootcdn.cn/)
 - CDN公共库 [字节跳动](http://cdn.bytedance.com/)
 - CDN公共库 [新浪](http://lib.sinaapp.com/)
